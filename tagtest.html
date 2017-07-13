@@ -6,18 +6,24 @@
 		<meta name="description" content="Testing all html tags">
 		<meta name="author" content="Andrew Vu and Percy Dai">
 	    <title>Tag Tests</title>
+	    <style>
+	    	nav { color: Red; width:20%; border-style: solid; border-width:2px; border-color:black; padding 5px; float: left; display:inline; margin-left:30px;}
+	    </style>
+	    <link rel="stylesheet" type="text/css" href="stylesheets/style.css">
 	</head>
 	<body>
-		<header>
-			<h1> Min Sok Chon - <del>Open</del><ins> Under Construction </ins></h1>
+		<header align="center">
+			<object align="center" width="100" height="100" style="margin-right:30px" data="images/cloudstorm1.swf">
+				<param name="autoplay" value="true">
+			</object>
+			<h1 id="title"> Min Sok Chon - <del>Open</del><ins> Under Construction </ins></h1>
 		</header>
 		<nav>
 			<ol>
-				<li><u>Days Opened</u>
+				<li><u>Other Pages</u>
 					<ul>
-						<li>Monday</li>
-						<li>Wednesday</li>
-						<li>Fridays</li>
+						<li> <a href="soundboard-part1a.html">SoundBoard-Part1a</a></li>
+						<li> <a href="soundboard-part1b.html">SoundBoard-Part1b</a></li>
 					</ul>
 				</li>
 				<li>
@@ -31,25 +37,55 @@
 					</dl>
 				</li>
 			</ol>
+			<img class="imgs" src="images/error.png" alt="gif" srcset="images/ramengif.gif 1x, images/foodhd.jpg 3x">
+			<img class="imgs" src="images/error.png" alt="svg" srcset="images/fastfood.svg 1x, images/foodhd.jpg 3x">
+			<img class="imgs" src="images/error.png" alt="png" srcset="images/audiosound.png 1x, images/foodhd.jpg 3x">
+			<img class="imgs" src="images/error.png" alt="webp" srcset="images/koala.webp 1x, images/foodhd.jpg 3x">
+			<img class="imgs" src="images/error.png" alt="jpeg" srcset="images/ramenjpg.jpeg 1x, images/foodhd.jpg 3x">
 		</nav>
+		
 		<main>
+
+
 			<form action="/soundboard-part1b.html" method="POST">
 			<fieldset>
 				Username: <input type ="text" name ="username"><br />
 				Password: <input type ="password" name ="password"><br />
+				Birthdate: <input type="date"> <br />
 				<input type ="radio" checked> Male 
 				<input type ="radio"> Female <br />
+				Enjoy Good Food? <input type="checkbox"><br />
+				How many years have you been eating? <input type ="number" style="width:40px;"><br />
+				Position interested in: <select>
+				  <optgroup label = "Team Member">
+					  <option value="Host">Host</option>
+					  <option value="Server">Server</option>
+				  <optgroup label = "Staff">
+				 	 <option value="Owner" label="Owner"></option>
+				 	 <option value="Manager" label="Manager"></option>
+				</select><br />
 				<input type="submit" value="Submit">
 				<input type="reset">
 				<input type="button" value="Do Nothing!">
 			</fieldset>
 			</form>
+			Questions? Comments? Concerns? <textarea name="comment" form="usrform" rows="8" cols="150"></textarea>
+			<div align="center" style="margin-bottom:40px">
+				<h4> Terms and aggrement </h4>
+				<iframe align="middle" style="margin-bottom:30px" src="data/toa.txt" width="500px" height="100px"></iframe><br />
+				Check to Agree: <input type="checkbox"><br />
+			</div>
+			</iframe>
+
 		</main>
 		<footer>
 			Copyright @ 2017
 		</footer>
 
 		<script>
-			document.getElementByClass("header").style.color = "red";
+			document.getElementById("title").style.color = "red";
 		</script>
+		<noscript>
+			Your browser does not support scripts.
+		</noscript>
 	</body>
