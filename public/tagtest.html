@@ -1,5 +1,8 @@
 
 <!DOCTYPE html>
+<!-- WARNING:  The date input type is not supported in all browsers. Please be sure to test, and consider using a polyfill.
+	 FIX: Once allowed we would use javascript, we'll include polyfill to support data input type
+ -->
 <html>
 	<head>
 		<meta charset="utf-8">
@@ -12,11 +15,11 @@
 	    <link rel="stylesheet" type="text/css" href="stylesheets/style.css">
 	</head>
 	<body>
-		<header align="center">
-			<object align="center" width="100" height="100" style="margin-right:30px" data="images/cloudstorm1.swf">
+		<header>
+			<object id="icon" data="images/cloudstorm1.swf">
 				<param name="autoplay" value="true">
 			</object>
-			<h1 id="title"> Min Sok Chon - <del>Open</del><ins> Under Construction </ins></h1>
+			<h1 id="title" > Min Sok Chon - <del>Open</del><ins> Under Construction </ins></h1>
 		</header>
 		<nav>
 			<ol>
@@ -27,8 +30,8 @@
 					</ul>
 				</li>
 				<li>
-					<dl><u>New Items</u>
-							<dt>Ramen</dt>
+					<dl>
+							<dt>Ramen Flavors</dt>
 								<dd>Tonkatsu</dd>
 								<dd>Vegetable Miso</dd>
 							<dt>Appetizers</dt>
@@ -69,13 +72,13 @@
 				<input type="button" value="Do Nothing!">
 			</fieldset>
 			</form>
-			Questions? Comments? Concerns? <textarea name="comment" form="usrform" rows="8" cols="150"></textarea>
-			<div align="center" style="margin-bottom:40px">
+			Questions? Comments? Concerns? <textarea name="comment" rows="8" cols="150"></textarea>
+			<div class="toa">
 				<h4> Terms and aggrement </h4>
-				<iframe align="middle" style="margin-bottom:30px" src="data/toa.txt" width="500px" height="100px"></iframe><br />
+				<iframe id="toa" src="data/toa.txt"></iframe><br />
 				Check to Agree: <input type="checkbox"><br />
 			</div>
-			</iframe>
+			
 
 		</main>
 		<footer>

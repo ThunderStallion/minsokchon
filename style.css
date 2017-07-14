@@ -1,0 +1,45 @@
+h1 {
+	display: inline;
+}
+main {
+	display: inline;
+	 width: 75%; 
+	 float: left;
+}
+body {
+    margin:0;
+    padding:0;
+    height:100%;
+}
+footer {
+	text-align: center;	
+	width:100%;
+}
+header{
+	margin-bottom:30px;
+	text-align: center;
+	width:100%;
+}
+.imgs{ 
+	width:200px; 
+	height:200px; 
+}
+.toa{
+	align-content:center;
+	margin-bottom:40px;
+}
+#toa{
+	 align-content:center;
+	 margin-bottom:30px;
+	 width:500px;
+	 height:100px;
+}
+#title{ 
+	text-align: center 
+}
+#icon{ 
+	width:100px; 
+	height:100px; 
+	margin-right:30px;
+	vertical-align:middle;
+}
