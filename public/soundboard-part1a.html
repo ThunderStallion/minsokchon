@@ -1,20 +1,22 @@
-<!DOCTYPE html>
+<!DOCTYPE HTML>
 <html>
 	<head>
 		<meta charset="utf-8">
 		<title>Soundboard Part1a</title>
 	</head>
-	<body>
-
+	<body bgcolor="#DAF7A6">
+	<!-- ERROR: bgcolor inside of body is an obselete attribute
+		 What it means: I know that using css is the correct way, but we're just trying to style as much as we can with HTML. Doing it this way with part 1A instructions will cause errors with many of our users and their browsers -->
 		<header>
-			<h1>
-				<center>CSE 134 Soundboard</center>
-			</h1>
+			<center><h1><font color="#490500"><u>CSE 134 Soundboard</u></font></h1></center>
+			<!-- ERROR: FONT is an obsolete, CENTER is obsolete
+		 What it means: I know that using css is the correct way, but we're just trying to style as much as we can with HTML. Doing it this way with part 1A instructions will cause errors with many of our users and their browsers -->
 		</header>
 
-		<table align="center">
-
-		    <tr>
+		<table  align="center" border="2" cellspacing="4" cellpadding="0" width="1000">
+			<!-- ERROR: ALIGN, CELLSPACING, CELLPADDING, and WIDTH are all obsolete under TABLE and TR tags
+		 What it means: I know that using css is the correct way, but we're just trying to style as much as we can with HTML. Doing it this way with part 1A instructions will cause errors with many of our users and their browsers -->
+		    <tr align="center" bgcolor="indianred">
 		    	<td>
 		    		<img src="images/audiosound.png" alt="image1"/> 
 						<audio id="a1" controls>
@@ -41,7 +43,7 @@
 				</td>
 		    </tr>
 		    
-		    <tr>
+		    <tr align="center" bgcolor="indianred">
 		    	<td>
 		    		<img src="images/audiosound.png" alt="image5"/> 
 						<audio id="a5" controls>
@@ -68,7 +70,7 @@
 				</td>
 		    </tr>
 
-		    <tr>
+		    <tr align="center" bgcolor="indianred">
 		    	<td>
 		    		<img src="images/audiosound.png" alt="image9"/> 
 						<audio id="a9" controls>
@@ -98,7 +100,13 @@
 		</table>
 
 		<footer>
+			<span> &nbsp; </span>
+			<span> &nbsp; </span>
+			<div align="center">
+			<!-- ERROR: ALIGN is obsolete under div -->
 			Copyright @ 2017
+			</div>
+			<span> &nbsp; </span>
 		</footer>
 	</body>
 </html>
